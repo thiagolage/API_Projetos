@@ -13,6 +13,7 @@ Este projeto se trata de uma API que permite aos usuários organizar e monitorar
   - "Add-Migration BancoInicial"
   - "Update-Database"
 * Desta forma o Entity Framework irá criar toda a estrutura de Banco de Dados necessária no servidor local e a aplicação poderá ser executada sem erros de conexão com a base de dados.
+  - OBS: Alguns dados primários já serão criados automaticamente, tais como Funções, Usuários, Status das Tarefas e Prioridades.
 
 ## 📌 Versionamento
 Este projeto utiliza o [GitHub](https://github.com/) para controle de versão.
