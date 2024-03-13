@@ -37,3 +37,8 @@ Este projeto utiliza o [GitHub](https://github.com/) para controle de versão.
 
 ## 🛠️ Docker
 * É a parte que ainda não domino tecnicamente, apesar de entender o conceito de conteinerização para poder executar a aplicação em diversos ambientes diferentes.
+* Cheguei a criar o arquivo Dockerfile dentro do projeto para que pudesse criar a imagem e subir para o DockerHub, porém estou com um erro no meu software do Docker Desktop e não consigo ativar a engine para Windows, dessa forma não consigo gerar a imagem.
+ - Explicando os passos a partir daqui, eu criaria uma imagem do projeto com o nome de "thiagoapieclipseworks" com o comando "docker build -t thiagoapieclipseworks:1.0 ."
+ - Após isso, criaria a tag dessa imagem com o comando "docker image tag thiagoapieclipseworks:1.0 thiagolage/apieclipseworks:1.0"
+ - Depois subiria a imagem para o Dockerhub através do comando "docker image push thiagolage/apieclipseworks:1.0"
+ - Com a imagem disponível em um repositório público no DockerHub, é possível que qualqer usuário baixe e crie o container em sua própria máquina com o comando "docker container run apieclipseworks:1.0 -p 8080:80"
